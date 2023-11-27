@@ -8,4 +8,8 @@
     <PackageReference Include="MySqlConnector" Version="2.2.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="bddestinocerto.sql" />
+  </ItemGroup>
+
 </Project>

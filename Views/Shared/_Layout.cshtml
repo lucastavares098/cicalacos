@@ -6,12 +6,13 @@
     <title>@ViewData["Title"] - Ciça Laços</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a href="https://localhost:5001/">
+                <a asp-controller="Home" asp-action="Index">
                         <img src="/img/logo.jpg" alt="Ciça Laços" style="width: 170px; height: 170px;"/>
                         </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -20,7 +21,6 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
@@ -35,7 +35,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -44,7 +44,7 @@
         <div class="container">
             &copy; 2023 - Ciça Laços - Por Lucas Tavares
             <a href="https://www.instagram.com/cicalacos.macae" target="_blank">
-                <img src="/img/insta.jpg" style="width: 30px; height: auto; margin-left: 20px;">
+                <i class="mdi mdi-instagram"></i>
             </a>
         </div>
     </footer>
