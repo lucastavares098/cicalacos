@@ -71,7 +71,7 @@ public class PedidosRepository
         if(!reader.IsDBNull(reader.GetOrdinal("Endereço")))
             usr.Endereço = reader.GetString("Endereço");
         if(!reader.IsDBNull(reader.GetOrdinal("Valor")))
-            usr.Valor = reader.GetInt32("Valor");
+            usr.Valor = reader.GetString("Valor");
         if(!reader.IsDBNull(reader.GetOrdinal("FormaPag")))
             usr.FormaPag = reader.GetString("FormaPag");   
         lista.Add(usr);
@@ -129,7 +129,7 @@ public Pedidos BuscarPorId(int Id)
         }
         if(!reader.IsDBNull(reader.GetOrdinal("Valor")))
         {
-            p.Valor = reader.GetInt32("Valor");     
+            p.Valor = reader.GetString("Valor");     
         }
         if(!reader.IsDBNull(reader.GetOrdinal("FormaPag")))
         {

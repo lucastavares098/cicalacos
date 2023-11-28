@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\xampp\\htdocs\\cicalacos\\uc4.csproj",
         "projectName": "uc4",
         "projectPath": "C:\\xampp\\htdocs\\cicalacos\\uc4.csproj",
-        "packagesPath": "C:\\Users\\lucas.tavares\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
         "outputPath": "C:\\xampp\\htdocs\\cicalacos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lucas.tavares\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

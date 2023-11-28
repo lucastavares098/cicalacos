@@ -10,7 +10,7 @@ namespace uc4.Models
         public string ItemPedido {get; set;}
         public string Endereço {get; set;}
 
-        public int Valor {get; set;}
+        public string Valor {get; set;}
         
         public string FormaPag {get; set;}
         

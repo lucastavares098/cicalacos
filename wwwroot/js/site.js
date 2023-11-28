@@ -3,13 +3,46 @@
 
 // Write your JavaScript code.
 
-$$(document).ready(function () {
-    setInterval(function() {
-        $('#img-1').fadeIn();
-        setTimeout($('#img-1').fadeOut, 2000);
-        $('#img-2').fadeIn();
-        setTimeout($('#img-2').fadeOut, 2000);
-        $('#img-3').fadeIn();
-        setTimeout($('#img-3').fadeOut, 2000);
-    }, 6000);
+$(document).ready(function () {
+    // Esconder todas as imagens inicialmente
+    $('#img-1, #img-2, #img-3').hide();
+
+    function fadeInOut(element) {
+        element.fadeIn(2500, function () {
+            $(this).fadeOut(3500);
+        });
+    }
+
+    function changeImage() {
+        fadeInOut($('#img-1'));
+
+        setTimeout(function () {
+            fadeInOut($('#img-2'));
+        }, 6000);
+
+        setTimeout(function () {
+            fadeInOut($('#img-3'));
+        }, 12000);
+    }
+
+    // Chamar a função inicialmente e, em seguida, a cada 15 segundos
+    changeImage();
+    setInterval(changeImage, 18000);
 });
+
+function formatarMoeda(element) {
+    // Remove caracteres não numéricos
+    let valor = element.value.replace(/\D/g, '');
+
+    // Limita o número de caracteres para 6
+    valor = valor.substring(0, 6);
+
+    // Formata o valor como moeda
+    valor = (Number(valor) / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    // Atualiza o valor no campo com o sufixo "R$"
+    element.value = valor.replace(/^[^\d]+/, 'R$ ');
+}
+
+
+

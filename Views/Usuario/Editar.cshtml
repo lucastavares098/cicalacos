@@ -4,34 +4,43 @@
     ViewData["Title"] = "Logado - Pedidos";
 }
 
-<h2>Edição de Pedidos</h2>
-<form asp-action="Editar" method="POST">
-    <p>
-        <label asp-for="Id">Id:</label>
-        <input type="hidden" asp-for="Id" />
-    </p>
-    <p>
-        <label asp-for="Nome">Nome:</label>
-        <input asp-for="Nome" />
-    </p>
-    <p>
-        <label asp-for="ItemPedido">Item Pedido:</label>
-        <input asp-for="ItemPedido" />
-    </p>
-    <p>
-        <label asp-for="Endereço">Endereço:</label>
-        <input asp-for="Endereço" />
-    </p>
-    <p>
-        <label asp-for="Valor">Valor:</label>
-        <input asp-for="Valor" />
-    </p>
-    <p>
-        <label asp-for="FormaPag">Forma de pagamento:</label>
-        <input asp-for="FormaPag" />
-    </p>
-    <p>
-        <input type="submit" value="Alterar" />
-    </p>
-    <br><br>
-</form>
+<div class="text-center">
+    <h2>Edição de Pedidos</h2>
+    <form asp-action="Editar" method="POST" class="mx-auto">
+        <div class="form-group">
+            <label asp-for="Id">Id:</label>
+            <input type="hidden" asp-for="Id" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Nome">Nome:</label>
+            <input asp-for="Nome" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ItemPedido">Item Pedido:</label>
+            <input asp-for="ItemPedido" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Endereço">Endereço:</label>
+            <input asp-for="Endereço" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Valor">Valor:</label>
+            <input asp-for="Valor" class="form-control" oninput="formatarMoeda(this)"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="FormaPag">Forma de pagamento:</label>
+            <select asp-for="FormaPag" class="form-control">
+                <option value="@Model.FormaPag" disabled selected>@Model.FormaPag</option>
+                <option value="Pix">Pix</option>
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Cartão de crédito/débito">Cartão de crédito/débito</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Alterar" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<!-- Site -->
+<script src="~/js/site.js"></script>

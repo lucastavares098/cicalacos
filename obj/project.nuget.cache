@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NDI41CnBe+EQMx1FZIJBVO2wBXvYdjIwU020H/MwonRNgdoVkxX3kOb6U4PSeF9o8rQ962dRYGfP3ANbCW0UvA==",
+  "dgSpecHash": "NU3nhriOooPfRZS9AxmumCFRmTEvSsWcW96mFySMHUxxcAG9EMym1+ydzvfGoFaaxt41dhbm0EUNunVn2kS2nw==",
   "success": true,
   "projectFilePath": "C:\\xampp\\htdocs\\cicalacos\\uc4.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lucas.tavares\\.nuget\\packages\\mysqlconnector\\2.2.6\\mysqlconnector.2.2.6.nupkg.sha512",
-    "C:\\Users\\lucas.tavares\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "C:\\Users\\lucas.tavares\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\lucas.tavares\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\Lucas\\.nuget\\packages\\mysqlconnector\\2.2.6\\mysqlconnector.2.2.6.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

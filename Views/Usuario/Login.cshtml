@@ -2,6 +2,13 @@
 @{
     ViewData["Title"] = "Login";
 }
+@if (!string.IsNullOrEmpty(ViewBag.Mensagem) && ViewBag.Mensagem == "Falha no Login")
+{
+    <div class="alert alert-danger" role="alert">
+        Falha no login! Verifique se preencheu os dados corretamente!
+    </div>
+}
+<div style="text-align: center">
 <h2>Login</h2>
 <p id="pMensagem">@ViewBag.Mensagem</p>
 <form asp-action="Login" method="POST">
@@ -17,3 +24,4 @@
         <input type="submit" value="Entrar" />
     </p>
 </form>
+</div>
